@@ -1,2 +1,19 @@
-# pagina_web_eventos
-Plataforma empresarial para gestión de eventos, clientes, presupuestos e inventario.
+# Plataforma Web Eventos
+
+Sistema empresarial para:
+
+- Gestión de clientes
+- Inventario
+- Presupuestos
+- Eventos
+- WhatsApp
+- Panel administrativo
+
+## Tecnologías
+- HTML
+- CSS
+- JavaScript
+- Node.js
+
+## Autor
+Rafael Rativa
