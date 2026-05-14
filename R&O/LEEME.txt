@@ -1,0 +1,1 @@
+Coloca los HTML en la raíz y css/style.css dentro de tu carpeta css, reemplazando el style.css actual.

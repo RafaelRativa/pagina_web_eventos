@@ -1,0 +1,12 @@
+.bodas {
+  background:
+    linear-gradient(
+      rgba(255,255,255,0.94),
+      rgba(247,245,242,0.88)
+    ),
+    url("../../img/bodas-bg.jpeg");
+}
+
+.hero-bodas {
+  background-image: url("../../img/bodas-hero.jpeg");
+}

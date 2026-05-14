@@ -1,0 +1,903 @@
+/* =========================
+   BASE
+========================= */
+
+@import url("base/variables.css");
+@import url("base/reset.css");
+@import url("base/typography.css");
+
+
+/* =========================
+   LAYOUT
+========================= */
+
+@import url("layout/navbar.css");
+@import url("layout/container.css");
+@import url("layout/hero.css");
+@import url("layout/sections.css");
+
+
+/* =========================
+   COMPONENTS
+========================= */
+
+@import url("components/buttons.css");
+@import url("components/cards.css");
+@import url("components/animations.css");
+@import url("components/gallery.css");
+
+
+/* =========================
+   PAGES
+========================= */
+
+@import url("pages/home.css");
+@import url("pages/bodas.css");
+@import url("pages/quince.css");
+@import url("pages/servicios.css");
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@import url("base/responsive.css");
+
+
+/* =========================
+   contacto
+========================= */
+
+/* ===== LAYOUT CONTACTO PRO ===== */
+
+.contacto-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* IZQUIERDA */
+.contacto-info {
+  color: #fff;
+}
+
+.contacto-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contacto-info p {
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #e5e5e5;
+}
+
+.info-box {
+  margin-bottom: 20px;
+}
+
+.info-box h4 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #c8a96a;
+}
+
+.info-box p {
+  margin: 0;
+}
+
+/* BOTÓN IZQUIERDA */
+.btn-outline {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  border: 2px solid #c8a96a;
+  color: #fff;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #c8a96a;
+  color: #000;
+}
+
+/* DERECHA */
+.contacto-box {
+  width: 100%;
+}
+
+/* AJUSTE TITULO */
+.contacto-box h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contacto-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contacto-info {
+    text-align: center;
+  }
+
+  .contacto-box h1 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+}
+/* ===== FONDO + OVERLAY ===== */
+
+.contacto-full {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(20, 35, 25, 0.75), rgba(20, 35, 25, 0.75)),
+    url("../img/bodas/boda (3).jpeg") center/cover no-repeat;
+  padding: 120px 30px 60px;
+}
+
+/* ===== CONTENEDOR ===== */
+
+.contacto-overlay {
+  width: 100%;
+}
+
+/* ===== FORMULARIO ===== */
+
+.form-historia {
+  display: grid;
+  gap: 22px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campo label {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  padding: 18px 22px;
+  font-size: 1rem;
+  outline: none;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.campo input {
+  height: 60px;
+}
+
+.campo textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* BOTÓN */
+.form-historia button {
+  width: fit-content;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #c8a96a, #e0c27a);
+  color: #1f1f1f;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-historia button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* ===== PARALLAX HOME ===== */
+
+.parallax-home {
+  min-height: 85vh;
+  background:
+    linear-gradient(rgba(15, 25, 18, 0.55), rgba(15, 25, 18, 0.55)),
+    url("../img/bodas/boda (4).jpeg") center/cover no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.parallax-content {
+  max-width: 760px;
+  color: #fff;
+}
+
+.parallax-content h2 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.parallax-content p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Celular */
+@media (max-width: 768px) {
+  .parallax-home {
+    background-attachment: scroll;
+    min-height: 70vh;
+  }
+
+  .parallax-content h2 {
+    font-size: 2.3rem;
+  }
+
+  .parallax-content p {
+    font-size: 1rem;
+  }
+}
+
+/* ===== SECCIÓN POR QUÉ RYO CON IMAGEN ===== */
+
+.section-light {
+  position: relative;
+  padding: 100px 20px;
+
+  background:
+    linear-gradient(rgba(15, 25, 18, 0.75), rgba(15, 25, 18, 0.75)),
+    url("../img/bodas/boda (2).jpeg") center top/cover no-repeat;
+
+  background-attachment: fixed;
+}
+
+/* Título */
+.section-light .section-title {
+  color: #fff;
+}
+
+/* Texto */
+.section-light p {
+  color: #e5e5e5;
+}
+
+/* TARJETAS */
+.section-light .card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+/* Hover pro */
+.section-light .card:hover {
+  transform: translateY(-8px);
+  transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-light {
+    background-attachment: scroll;
+  }
+}
+
+/* ===== GALERÍA PREMIUM (BEIGE + DORADO + AZUL REY) ===== */
+
+.section-gallery {
+  position: relative;
+  padding: 120px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0f1f3d,   /* azul rey oscuro */
+      #1c3a6b,   /* azul rey */
+      #d6c2a1    /* beige dorado */
+    );
+
+  background-attachment: fixed;
+}
+
+/* efecto de brillo elegante */
+.section-gallery::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 215, 150, 0.15), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(255, 215, 150, 0.12), transparent 40%);
+
+  pointer-events: none;
+}
+
+/* contenido */
+.section-gallery .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* título */
+.section-gallery .section-title {
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+/* texto */
+.section-gallery .gallery-intro {
+  color: #f1e7d8;
+}
+
+/* tarjetas (opcional si quieres mejorar más) */
+.section-gallery .gallery-item img {
+  border-radius: 14px;
+  transition: 0.4s;
+}
+
+.section-gallery .gallery-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+/* =========================
+   CTA PREMIUM (AZUL REY + DORADO)
+========================= */
+
+.section-cta {
+  position: relative;
+  padding: 120px 20px;
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0b1d3a,
+      #12305a,
+      #1c3a6b
+    );
+
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.section-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 30% 40%, rgba(212, 175, 55, 0.18), transparent 40%),
+    radial-gradient(circle at 70% 70%, rgba(212, 175, 55, 0.12), transparent 40%);
+
+  pointer-events: none;
+}
+
+.section-cta .container {
+  position: relative;
+  z-index: 2;
+}
+
+.section-cta h2 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.section-cta p {
+  color: #e8dcc6;
+  font-size: 1.2rem;
+  margin-bottom: 35px;
+}
+
+.section-cta .btn {
+  background: linear-gradient(135deg, #c8a96a, #e0c27a);
+  color: #1a1a1a;
+  border-radius: 30px;
+  padding: 16px 40px;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 10px 30px rgba(200, 169, 106, 0.35);
+  transition: 0.3s ease;
+}
+
+.section-cta .btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(200, 169, 106, 0.5);
+}
+
+@media (max-width: 768px) {
+  .section-cta {
+    background-attachment: scroll;
+    padding: 90px 20px;
+  }
+
+  .section-cta h2 {
+    font-size: 2.2rem;
+  }
+
+  .section-cta p {
+    font-size: 1rem;
+  }
+}
+
+
+/* ===== FOOTER NIVEL FINAL ===== */
+
+.footer {
+  position: relative;
+  background:
+    linear-gradient(
+      135deg,
+      #0b1d3a,
+      #12305a,
+      #1c3a6b
+    );
+  color: #fff;
+  padding: 80px 20px 30px;
+}
+
+/* brillo dorado */
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 30% 40%, rgba(212,175,55,0.18), transparent 40%),
+    radial-gradient(circle at 70% 70%, rgba(212,175,55,0.12), transparent 40%);
+
+  pointer-events: none;
+}
+
+/* contenedor */
+.footer-container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 50px;
+}
+
+/* logo */
+.footer-brand h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  color: #e8dcc6;
+}
+
+/* links */
+.footer-links h4,
+.footer-contact h4 {
+  margin-bottom: 15px;
+  color: #c8a96a;
+}
+
+.footer-links a {
+  display: block;
+  margin-bottom: 8px;
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #c8a96a;
+}
+
+/* contacto */
+.footer-contact p {
+  margin-bottom: 8px;
+  color: #ddd;
+}
+
+/* línea inferior */
+.footer-bottom {
+  margin-top: 50px;
+  padding-top: 20px;
+  text-align: center;
+  border-top: 1px solid rgba(212,175,55,0.2);
+}
+
+.footer-bottom p {
+  color: #e8dcc6;
+  font-size: 0.9rem;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+/* ===== QUINCE AÑOS PARALLAX ===== */
+
+.page-quince .quince {
+  position: relative;
+  padding: 120px 20px;
+
+  background:
+    linear-gradient(rgba(11, 29, 58, 0.78), rgba(11, 29, 58, 0.78)),
+    url("../img/quince/quince (2).jpeg") center;
+
+  background-attachment: fixed;
+}
+
+.page-quince .quince h2 {
+  color: #fff;
+}
+
+.page-quince .quince .card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  border: 1px solid rgba(200, 169, 106, 0.35);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.28);
+}
+
+.page-quince .quince .card h3 {
+  color: #0b1d3a;
+}
+
+.page-quince .quince .card p {
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .page-quince .quince {
+    background-attachment: scroll;
+  }
+}
+
+/* Quitar espacios globales */
+/* WHATSAPP FLOTANTE */
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+
+  background: #25d366;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+  text-decoration: none;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  z-index: 9999;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-4px);
+}
+
+/* =========================
+   AJUSTES FINALES IMPLEMENTADOS
+========================= */
+
+.campo select {
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  padding: 18px 22px;
+  font-size: 1rem;
+  outline: none;
+  background: #f4f4f4;
+  color: #222;
+  height: 60px;
+  font-family: inherit;
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  z-index: 9999;
+  transition: 0.3s ease;
+}
+
+.whatsapp-float svg {
+  display: block;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.page-servicios .section-cta {
+  min-height: auto;
+}
+
+.footer > .container {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    right: 18px;
+    bottom: 18px;
+    width: 54px;
+    height: 54px;
+  }
+}
+
+/* =========================
+   CTA GLOBAL (TODAS LAS PÁGINAS)
+========================= */
+
+.section-cta-global {
+  position: relative;
+  padding: 120px 20px;
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0b1d3a,
+      #12305a,
+      #1c3a6b
+    );
+
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* brillo elegante */
+.section-cta-global::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 30% 40%, rgba(212, 175, 55, 0.18), transparent 40%),
+    radial-gradient(circle at 70% 70%, rgba(212, 175, 55, 0.12), transparent 40%);
+
+  pointer-events: none;
+}
+
+/* contenido */
+.section-cta-global .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* título */
+.section-cta-global h2 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+/* texto */
+.section-cta-global p {
+  color: #e8dcc6;
+  font-size: 1.2rem;
+  margin-bottom: 35px;
+}
+
+/* botón */
+.btn-cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #c8a96a, #e0c27a);
+  color: #1a1a1a;
+  border-radius: 30px;
+  padding: 16px 40px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(200, 169, 106, 0.35);
+  transition: 0.3s ease;
+}
+
+.btn-cta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(200, 169, 106, 0.5);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .section-cta-global {
+    background-attachment: scroll;
+    padding: 90px 20px;
+  }
+
+  .section-cta-global h2 {
+    font-size: 2.2rem;
+  }
+
+  .section-cta-global p {
+    font-size: 1rem;
+  }
+}
+
+/* ===== BODAS PARALLAX ===== */
+
+.page-bodas .bodas {
+  position: relative;
+  padding: 120px 20px;
+
+  background:
+    linear-gradient(rgba(11, 29, 58, 0.78), rgba(11, 29, 58, 0.78)),
+    url("../img/bodas/boda (2).jpeg") center top/cover no-repeat;
+
+  background-attachment: fixed;
+}
+
+.page-bodas .bodas h2 {
+  color: #fff;
+}
+
+.page-bodas .bodas .card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  border: 1px solid rgba(200, 169, 106, 0.35);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.28);
+}
+
+.page-bodas .bodas .card h3 {
+  color: #0b1d3a;
+}
+
+.page-bodas .bodas .card p {
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .page-bodas .bodas {
+    background-attachment: scroll;
+  }
+}
+
+/* ===== OTROS SERVICIOS PARALLAX ===== */
+
+.page-servicios .servicios {
+  position: relative;
+  padding: 120px 20px;
+
+  background:
+    linear-gradient(rgba(11, 29, 58, 0.78), rgba(11, 29, 58, 0.78)),
+    url("../img/bodas/boda (5).jpeg") center top/cover no-repeat;
+
+  background-attachment: fixed;
+}
+
+.page-bodas .bodas h2 {
+  color: #fff;
+}
+
+.page-bodas .bodas .card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  border: 1px solid rgba(200, 169, 106, 0.35);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.28);
+}
+
+.page-bodas .bodas .card h3 {
+  color: #0b1d3a;
+}
+
+.page-bodas .bodas .card p {
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .page-bodas .bodas {
+    background-attachment: scroll;
+  }
+}
+
+/* ===== HERO SERVICIOS CINEMATIC PREMIUM ===== */
+
+.hero-servicios {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(rgba(5, 15, 30, 0.45), rgba(5, 15, 30, 0.78)),
+    url("../img/bodas/boda (1).jpeg") center 18% / cover no-repeat;
+}
+
+/* Zoom cinematográfico */
+.hero-servicios::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(rgba(5, 15, 30, 0.25), rgba(5, 15, 30, 0.65)),
+    url("../img/bodas/boda (1).jpeg") center 18% / cover no-repeat;
+
+  transform: scale(1);
+  animation: cinematicZoom 14s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+/* Capa oscura elegante */
+.hero-servicios::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at center, rgba(255,255,255,0.08), transparent 45%),
+    linear-gradient(rgba(11,29,58,0.35), rgba(11,29,58,0.85));
+  z-index: 1;
+}
+
+/* Texto encima */
+.hero-servicios .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Texto más premium */
+.hero-servicios h1 {
+  font-size: clamp(42px, 6vw, 76px);
+  letter-spacing: 6px;
+  text-shadow: 0 12px 35px rgba(0,0,0,0.45);
+}
+
+.hero-servicios p {
+  color: #f1e7d8;
+  text-shadow: 0 8px 25px rgba(0,0,0,0.45);
+}
+
+/* Animación */
+@keyframes cinematicZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}

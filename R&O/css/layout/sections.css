@@ -1,0 +1,17 @@
+.section {
+  padding: 100px 20px;
+}
+
+.section-light {
+  background: var(--marfil);
+}
+
+.section-cta {
+  background: var(--azul-noche);
+  color: var(--blanco);
+  text-align: center;
+}
+
+.section-title {
+  margin-bottom: 50px;
+}

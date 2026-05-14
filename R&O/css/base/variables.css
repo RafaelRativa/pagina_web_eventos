@@ -1,0 +1,17 @@
+:root {
+    /* COLORES */
+  --azul-noche: #0b1c2d;
+  --dorado: #c6a664;
+  --marfil: #f7f5f2;
+  --gris-texto: #555555;
+  --blanco: #ffffff;
+
+
+  /* ESPACIADO PROFESIONAL */
+
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 32px;
+  --space-lg: 64px;
+  --space-xl: 120px;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- ================= CONFIGURACIÓN BASE ================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO básico profesional -->
+  <meta name="description" content="RYO diseña y produce eventos únicos con planeación estratégica, diseño elegante y ejecución impecable.">
+
+  <title>RYO | Diseño y Producción de Eventos</title>
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<!-- Clase específica para estilos exclusivos del home -->
+<body class="page-home">
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <!-- LOGO -->
+      <a href="index.html" class="logo">RYO</a>
+
+      <!-- Navegación principal -->
+      <!-- aria-label mejora accesibilidad -->
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="bodas.html">Bodas</a>
+        <a href="quince.html">Quince Años</a>        
+        <a href="servicios.html">Otros Servicios</a>
+        <a href="contacto.html">Agendar</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- ================= CONTENIDO PRINCIPAL ================= -->
+  <!-- main mejora estructura semántica -->
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <!-- Sección visual principal -->
+    <section class="hero hero-home">
+
+      
+
+      <div class="hero-content">
+        <h1 class="fade-up delay-1">
+          Eventos que se viven, se sienten y se recuerdan
+        </h1>
+
+        <p class="fade-up delay-2">
+          En RYO creamos experiencias únicas con diseño, planeación y ejecución impecable.
+        </p>
+
+        <a href="servicios.html" class="btn fade-up delay-3">
+          Conoce nuestros servicios
+        </a>
+      </div>
+
+    </section>
+
+
+    <!-- ================= SECCIÓN VALOR ================= -->
+    <!-- Antes era solo container, ahora es section semántica -->
+    <section class="section section-light">
+      <div class="container">
+
+        <!-- H2 correcto en jerarquía (después del H1 del hero) -->
+        <h2 class="section-title">¿Por qué elegir RYO?</h2>
+
+        <div class="cards">
+
+          <!-- article es mejor práctica que div cuando es contenido independiente -->
+          <article class="card fade-up delay-1">
+            <h3>Planeación Estratégica</h3>
+            <p>Cada evento se construye con método, experiencia y visión.</p>
+          </article>
+
+          <article class="card fade-up delay-2">
+            <h3>Diseño Elegante</h3>
+            <p>Estética cuidada, coherente y alineada con tu historia.</p>
+          </article>
+
+          <article class="card fade-up delay-3">
+            <h3>Ejecución Impecable</h3>
+            <p>Nos encargamos de todo para que tú disfrutes el momento.</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section-gallery">
+      <div class="container">
+
+        <h2 class="section-title">Momentos que cuentan historias</h2>
+        <p class="gallery-intro">
+          Cada evento que diseñamos refleja emociones, estilo y detalles únicos.
+        </p>
+
+        <div class="gallery-grid">
+
+          <figure class="gallery-item">
+            <img src="img/bodas/boda (3).jpeg" alt="Decoración elegante para boda">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/quince/quince (1).jpeg" alt="Decoración de quince años elegante">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/eventos/eventos (1).jpeg" alt="Montaje de evento elegante">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/bodas/boda (2).jpeg" alt="Mesa decorada para boda">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/quince/quince (2).jpeg" alt="Decoración floral quince años">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/bodas/boda (1).jpeg" alt="Producción profesional de evento">
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="img/quince/quince (3).jpeg" alt="Producción profesional de evento">
+          </figure>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="section section-cta">
+      <div class="container">
+
+        <h2>Hablemos de tu evento</h2>
+        <p>Agenda una asesoría y comencemos a diseñar algo inolvidable.</p>
+
+        <a class="btn" href="contacto.html">
+          Agendar asesoría
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <!-- Profesionalmente siempre debe existir -->
+  <a href="https://wa.me/573206734617?text=Hola%20RYO,%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20eventos"
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Escribir a RYO por WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false">
+    <path fill="white" d="M16 .4C7.4.4.5 7.3.5 15.9c0 2.8.7 5.4 2.1 7.7L.4 31.6l8.2-2.1c2.2 1.2 4.7 1.8 7.4 1.8 8.6 0 15.5-6.9 15.5-15.5C31.5 7.3 24.6.4 16 .4zm0 28.3c-2.4 0-4.6-.6-6.6-1.7l-.5-.3-4.9 1.3 1.3-4.8-.3-.5c-1.2-2-1.8-4.3-1.8-6.7C3.2 8.4 8.6 3 16 3s12.8 5.4 12.8 12.8S23.4 28.7 16 28.7zm7-9.5c-.4-.2-2.4-1.2-2.8-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.6-.2.2-.4.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.6.2-.2.2-.4.3-.6.1-.2 0-.5 0-.6 0-.2-.9-2.2-1.2-3-.3-.7-.6-.6-.9-.6h-.8c-.3 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.3 3.4c.2.2 2.3 3.6 5.7 5 .8.4 1.5.6 2 .7.8.2 1.6.2 2.2.1.7-.1 2.4-1 2.7-1.9.3-.9.3-1.7.2-1.9-.1-.2-.4-.3-.8-.5z"/>
+  </svg>
+  </a>
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <div class="footer-brand">
+        <h3>RYO</h3>
+        <p>Diseño y producción de eventos memorables.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Enlaces</h4>
+        <a href="index.html">Inicio</a>
+        <a href="bodas.html">Bodas</a>
+        <a href="quince.html">Quince Años</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p>📍 Mosquera, Cundinamarca</p>
+        <p>📞 +57 320 673 4617</p>
+        <p>✉️ contacto@ryoeventos.com</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 RYO Eventos. Todos los derechos reservados.</p>
+    </div>
+
+  </footer>
+
+</body>
+</html>

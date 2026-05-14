@@ -1,0 +1,16 @@
+.quince {
+  background:
+    linear-gradient(
+      rgba(247,245,242,0.9),
+      rgba(247,245,242,0.9)
+    ),
+    url("../../img/quince-bg.jpeg");
+}
+
+.quince h1 {
+  color: #9b6b8f;
+}
+
+.hero-quince {
+  background-image: url("../../img/quince-hero.jpeg");
+}
